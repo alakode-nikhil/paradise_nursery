@@ -1,0 +1,16 @@
+ 
+
+.bg::before {
+  content: '';
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/garden.png") no-repeat center center;
+  background-size: cover;
+  filter: blur(8px);      /* Blurs only the image! */
+  z-index: -1;            /* Stays behind everything */
+  pointer-events: none;   /* Make sure it's not clickable */
+}
